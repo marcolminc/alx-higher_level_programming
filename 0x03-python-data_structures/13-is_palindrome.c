@@ -7,8 +7,8 @@
  */
 int is_palindrome(listint_t **head)
 {
-	int *num_arr;
-	size_t arr_size, left, right;
+	int *num_arr, left, right;
+	size_t arr_size;
 	listint_t *current;
 
 	if (*head == NULL)
