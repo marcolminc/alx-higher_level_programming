@@ -22,7 +22,7 @@ int is_palindrome(listint_t **head)
 	while (current != NULL)
 	{
 		num_arr[right++] = current->n;
-		if (right >= arr_size)
+		if ((size_t)right >= arr_size)
 		{
 			arr_size *= 2;
 			num_arr = realloc(num_arr, arr_size * sizeof(int));
