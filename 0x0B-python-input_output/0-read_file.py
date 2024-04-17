@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+""" write a function that read from a file """
 def read_file(filename=""):
     """
     read from a file.
