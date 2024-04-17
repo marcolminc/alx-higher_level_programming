@@ -1,14 +1,18 @@
 #!/usr/bin/python3
-
 """ write a function that read from a file """
+
+
 def read_file(filename=""):
     """
-    read from a file.
+    Read and print content of a file.
 
-    :param filename: The file to be read.
-    :return: Nothing.
+    Args:
+        filename (str): The name of the file to be read.
+
+    Returns:
+        None
     """
 
-    with open(filename, 'r') as file:
-        content = file.read()
+    with open(filename, 'r') as f:
+        content = f.read()
         print(content, end='')
