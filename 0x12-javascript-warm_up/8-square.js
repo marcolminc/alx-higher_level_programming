@@ -1,5 +1,4 @@
 #!/usr/bin/node
-const block = 'X'; 
 if (process.argv[2] === undefined || isNaN(process.argv[2])) {
   console.log('Missing size');
 } else {
