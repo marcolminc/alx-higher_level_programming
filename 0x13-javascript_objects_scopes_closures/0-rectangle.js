@@ -1,9 +1,8 @@
 #!/usr/bin/node
+/* eslint-disable no-useless-constructor */
 class Rectangle {
-  constructor (w, h) {
-    // Initialize properties here
+  constructor () {
   }
-
-  // Add methods to define functionality
 }
+/* eslint-enable no-useless-constructor */
 module.exports = Rectangle;
