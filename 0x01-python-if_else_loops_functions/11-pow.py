@@ -11,3 +11,6 @@ def pow(a, b):
         for i in range(1, b):
             result *= a
     return result
+
+
+print(pow(-98, -10))
