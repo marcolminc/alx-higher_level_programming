@@ -6,3 +6,4 @@ class Rectangle {
 
   // Add methods to define functionality
 }
+module.exports = Rectangle;
