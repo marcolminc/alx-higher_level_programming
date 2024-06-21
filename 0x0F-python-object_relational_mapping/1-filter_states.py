@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Module "lists all states with a name starting with N (upper N) from the database
+Module that lists states with names starting with N (upper N) from the database
 """
 import sys
 import MySQLdb
@@ -31,7 +31,6 @@ def list_states(username, password, database):
     for row in rows:
         if row[1][0] == 'N':
             print(row)
-
 
     db.close()
 
