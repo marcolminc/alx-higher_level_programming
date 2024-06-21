@@ -27,6 +27,7 @@ def list_states(username, password, database, state):
     cursor = db.cursor()
     query = "SELECT * FROM states WHERE BINARY `name` = '{}' ".format(state)
     cursor.execute(query)
+    query += "ORDER BY id ASC"
     rows = cursor.fetchall()
 
     for row in rows:
