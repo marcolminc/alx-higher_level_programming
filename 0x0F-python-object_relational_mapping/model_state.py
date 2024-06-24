@@ -8,6 +8,7 @@ from sqlalchemy.orm import sessionmaker
 
 Base = declarative_base()
 
+
 class State(Base):
     """
         State class that links to MySQL table 'states'
@@ -18,6 +19,7 @@ class State(Base):
     name = Column(String(128), nullable=False)
 
     if __name__ == "__main__":
-        engine = create_engine('mysql://username:password@localhost:3306/database_name')
-        #crate tables in the db(defined by Base's subclasses)
+        con = 'mysql://username:password@localhost:3306/database_name'
+        engine = create_engine(con)
+        # crate tables in the db(defined by Base's subclasses)
         Base.metadata.create_all(engine)
