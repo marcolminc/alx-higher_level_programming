@@ -26,18 +26,17 @@ def list_cities(username, password, database, state):
 
     cursor = db.cursor()
     query = """
-            SELECT c.name
-            FROM cities c
-            WHERE c.state_id = (SELECT id
-                                FROM states s
-                                WHERE s.name = %s LIMIT 1)
-        """
+                SELECT c.name
+                FROM cities c
+                JOIN states s ON c.state_id = s.id
+                WHERE s.name = %s
+                ORDER BY c.id ASC
+            """
     cursor.execute(query, (state,))
     rows = cursor.fetchall()
 
-    for row in rows:
-        print(row)
-
+    cities = [row[0] for row in rows]
+    print(", ".join(cities))
     db.close()
 
 
