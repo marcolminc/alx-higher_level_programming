@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Module that retrieves and prints the very first state 
+Module that retrieves and prints the very first state
 """
 import sys
 from sqlalchemy import create_engine
