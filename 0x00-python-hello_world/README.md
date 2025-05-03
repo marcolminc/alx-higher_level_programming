@@ -5,4 +5,4 @@
 3. 2. Hello, print
 4. 3. Print integer
 5. 4. Print float
-
+6. 5. Print string
