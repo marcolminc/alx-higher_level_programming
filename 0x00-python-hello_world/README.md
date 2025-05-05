@@ -6,3 +6,5 @@
 4. 3. Print integer
 5. 4. Print float
 6. 5. Print string
+7. 6. Play with strings
+
