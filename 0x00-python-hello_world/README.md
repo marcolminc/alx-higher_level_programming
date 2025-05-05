@@ -9,4 +9,5 @@
 7. 6. Play with strings
 8. 7. Copy - Cut - Paste
 9. 8. Create a new sentence
+10. 9. Easter Egg
 
