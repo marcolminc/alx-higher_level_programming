@@ -5,4 +5,5 @@
 3. 2. I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game
 4. 3. When I was having that alphabet soup, I never thought that it would pay off
 5. 4. Hexadecimal printing
+6. 5. 00...99
 
