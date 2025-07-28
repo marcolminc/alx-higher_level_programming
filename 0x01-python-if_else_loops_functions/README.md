@@ -6,4 +6,14 @@
 4. 3. When I was having that alphabet soup, I never thought that it would pay off
 5. 4. Hexadecimal printing
 6. 5. 00...99
+7. 6.
+8. 7. 
+9. 8.
+10. 9.
+11. 10.
+12. 11.
+13. 12.
+14. 13.
+15. 14.
+16. 15. Remove at Position
 
