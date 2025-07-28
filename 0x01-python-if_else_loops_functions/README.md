@@ -16,4 +16,4 @@
 14. 13.
 15. 14.
 16. 15. Remove at Position
-
+17. 16. magic calculation
