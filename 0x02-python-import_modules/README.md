@@ -8,4 +8,5 @@ Table of contents:
 5. 4. Who are you?
 6. 5. Everything can be imported.
 7. 6. Build my own calculator
+8. 7. easy print
 
