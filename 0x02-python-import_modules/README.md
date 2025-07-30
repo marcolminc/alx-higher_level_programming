@@ -7,4 +7,5 @@ Table of contents:
 4. 3.
 5. 4. Who are you?
 6. 5. Everything can be imported.
+7. 6. Build my own calculator
 
