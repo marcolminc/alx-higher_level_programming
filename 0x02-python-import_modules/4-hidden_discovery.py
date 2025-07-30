@@ -1,16 +1,14 @@
 #!/usr/bin/python3
-import sys
-import marshal
 
-if __name__ == '__main__':
-    if len(sys.argv) != 2:
-        print("usage: {sys.argv[0]} file.pyc")
-        sys.exit(1)
+if __name__ == "__main__":
+    import importlib.util
+    import sys
 
-    pyc_file = sys.argv[1]
-    with open(pyc_file, 'rb') as f:
-        header = f.read(16)
-        code = marshal.load(f)
-        for name in code.co_names:
-            if name[0] != '_':
-                print(name)
+    pyc_path = './hidden_4.pyc'
+    spec = importlib.util.spec_from_file_location("hidden_4", pyc_path)
+    hidden_4 = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(hidden_4)
+    names = [name for name in dir(hidden_4) if not name.startswith("__")]
+    names.sort()
+    for name in names:
+        print(name)
