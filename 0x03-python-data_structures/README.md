@@ -9,4 +9,5 @@ Table of Contents:
 6. 5. can you c me?
 7. 6. list of lists = matrix
 8. 7. tupple addition
-
+9. 8. more returns!
+10. 9. 
