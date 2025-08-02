@@ -6,4 +6,5 @@ Table of Contents:
 3. 2. replace element
 4. 3. Print a list of integers... in reverse!
 5. 4. replace in a copy
+6. 5. can you c me?
 
