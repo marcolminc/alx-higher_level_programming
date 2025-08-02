@@ -5,4 +5,5 @@ Table of Contents:
 2. 1. secure access to an element in a list
 3. 2. replace element
 4. 3. Print a list of integers... in reverse!
+5. 4. replace in a copy
 
