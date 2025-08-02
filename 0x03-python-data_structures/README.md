@@ -8,4 +8,5 @@ Table of Contents:
 5. 4. replace in a copy
 6. 5. can you c me?
 7. 6. list of lists = matrix
+8. 7. tupple addition
 
