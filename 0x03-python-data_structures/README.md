@@ -10,4 +10,5 @@ Table of Contents:
 7. 6. list of lists = matrix
 8. 7. tupple addition
 9. 8. more returns!
-10. 9. 
+10. 9. find the max
+
