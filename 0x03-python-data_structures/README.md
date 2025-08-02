@@ -7,4 +7,5 @@ Table of Contents:
 4. 3. Print a list of integers... in reverse!
 5. 4. replace in a copy
 6. 5. can you c me?
+7. 6. list of lists = matrix
 
