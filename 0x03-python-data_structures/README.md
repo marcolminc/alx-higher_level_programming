@@ -12,5 +12,6 @@ Table of Contents:
 9. 8. more returns!
 10. 9. find the max
 11. 10. only by 2
-12. delete at
+12. 11. delete at
+13. 12. switch
 
