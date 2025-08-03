@@ -14,4 +14,5 @@ Table of Contents:
 11. 10. only by 2
 12. 11. delete at
 13. 12. switch
-
+14. 13. list palindrome
+14. 14. CPython #0: Python lists
