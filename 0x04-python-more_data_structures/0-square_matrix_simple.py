@@ -1,12 +1,13 @@
 #!/usr/bin/python3
-square_matrix_simple = __import__('0-square_matrix_simple').square_matrix_simple
-
-matrix = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
-]
-
-new_matrix = square_matrix_simple(matrix)
-print(new_matrix)
-print(matrix)
+def square_matrix_simple(matrix=[]):
+    """computes the square value of all integers of a matrix
+    Args:
+        matrix - the matrix
+    Return:
+        new (squared) matrix)
+    """
+    new_matrix = []
+    if matrix:
+        for row in matrix:
+            new_matrix.append([num ** 2 for num in row])
+    return new_matrix
