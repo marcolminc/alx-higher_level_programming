@@ -2,4 +2,5 @@
 Table of Contents:
 1. 0. Squared simple
 2. 1. Search and replace
+3. 2. Unuque addition
 
