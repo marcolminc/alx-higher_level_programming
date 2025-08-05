@@ -4,4 +4,5 @@ Table of Contents:
 2. 1. Search and replace
 3. 2. Unuque addition
 4. 3. Present in both
+5. 4. Only differences
 
