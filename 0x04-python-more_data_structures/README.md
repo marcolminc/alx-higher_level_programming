@@ -14,4 +14,5 @@ Table of Contents:
 12. 11. Multiply by using map
 13. 12. Roman to integer
 14. 13. Weighted average!
+15. 14. Square by using map
 
