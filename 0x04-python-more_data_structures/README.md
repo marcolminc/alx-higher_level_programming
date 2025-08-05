@@ -13,4 +13,5 @@ Table of Contents:
 11. 10. Best score
 12. 11. Multiply by using map
 13. 12. Roman to integer
+14. 13. Weighted average!
 
