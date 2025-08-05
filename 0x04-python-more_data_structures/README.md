@@ -5,4 +5,5 @@ Table of Contents:
 3. 2. Unuque addition
 4. 3. Present in both
 5. 4. Only differences
+6. 5. Number of keys
 
