@@ -10,4 +10,5 @@ Table of Contents:
 8. 7. Update dictionary
 9. 8. Simple delete by key
 10. 9. Multiply by 2
+11. 10. Best score
 
