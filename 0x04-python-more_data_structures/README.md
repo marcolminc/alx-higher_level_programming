@@ -7,4 +7,5 @@ Table of Contents:
 5. 4. Only differences
 6. 5. Number of keys
 7. 6. Print sorted dictionary
+8. 7. Update dictionary
 
