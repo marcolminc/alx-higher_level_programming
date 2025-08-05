@@ -9,4 +9,5 @@ Table of Contents:
 7. 6. Print sorted dictionary
 8. 7. Update dictionary
 9. 8. Simple delete by key
+10. 9. Multiply by 2
 
