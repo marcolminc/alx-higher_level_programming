@@ -8,4 +8,5 @@ Table of Contents:
 6. 5. Number of keys
 7. 6. Print sorted dictionary
 8. 7. Update dictionary
+9. 8. Simple delete by key
 
