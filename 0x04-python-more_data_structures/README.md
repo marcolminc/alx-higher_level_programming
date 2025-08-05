@@ -6,4 +6,5 @@ Table of Contents:
 4. 3. Present in both
 5. 4. Only differences
 6. 5. Number of keys
+7. 6. Print sorted dictionary
 
