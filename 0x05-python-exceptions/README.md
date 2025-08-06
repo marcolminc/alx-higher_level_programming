@@ -8,4 +8,5 @@ Table of contents:
 6. 5. Raise exception
 7. 6. Raise a message
 8. 7. Safe integer print with error message
-9.
+9. 8. Safe function
+10. 
