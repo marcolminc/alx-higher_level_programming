@@ -4,4 +4,8 @@ Table of contents:
 2. 1. Safe printing of an integers list
 3. 2. Print and count integers
 4. 3. Integers division with debug
-
+5. 4. Divide a list
+6. 5. Raise exception
+7.
+8.
+9.
