@@ -7,10 +7,9 @@ def list_division(my_list_1, my_list_2, list_length):
             ratio = my_list_1[i] / my_list_2[i]
         except IndexError:
             print('out of range')
-            break
         except ZeroDivisionError:
             print('division by 0')
-        except TypeError:
+        except (TypeError, ValueError):
             print('wrong type')
         finally:
             res_list.append(ratio)
