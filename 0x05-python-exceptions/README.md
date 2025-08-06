@@ -6,6 +6,6 @@ Table of contents:
 4. 3. Integers division with debug
 5. 4. Divide a list
 6. 5. Raise exception
-7.
+7. 6. Raise a message
 8.
 9.
