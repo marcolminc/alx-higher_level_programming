@@ -7,5 +7,5 @@ Table of contents:
 5. 4. Divide a list
 6. 5. Raise exception
 7. 6. Raise a message
-8.
+8. 7. Safe integer print with error message
 9.
