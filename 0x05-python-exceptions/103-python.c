@@ -22,10 +22,8 @@ void print_python_bytes(PyObject *p)
 		printf("  [ERROR] Invalid Bytes Object\n");
 		return;
 	}
-
 	size = ((PyVarObject *)p)->ob_size;
 	str = ((PyBytesObject *)p)->ob_sval;
-
 	printf("  size: %ld\n", size);
 	printf("  trying string: %s\n", str);
 	printf("  first %ld bytes:", size + 1 > 10 ? 10 : size + 1);
@@ -51,11 +49,9 @@ void print_python_list(PyObject *p)
 		printf("  [ERROR] Invalid List Object\n");
 		return;
 	}
-
 	size = ((PyVarObject *)p)->ob_size;
 	printf("[*] Size of the Python List = %ld\n", size);
 	printf("[*] Allocated = %ld\n", ((PyListObject *)p)->allocated);
-
 	for (i = 0; i < size; i++)
 	{
 		item = ((PyListObject *)p)->ob_item[i];
@@ -68,7 +64,7 @@ void print_python_list(PyObject *p)
 }
 
 /**
-* print_python_float - Prints float object info
+ * print_python_float - Prints float object info
  * @p: Python float object
  */
 void print_python_float(PyObject *p)
@@ -82,24 +78,32 @@ void print_python_float(PyObject *p)
 		printf("  [ERROR] Invalid Float Object\n");
 		return;
 	}
-
 	val = ((PyFloatObject *)p)->ob_fval;
-
-	/* Handle whole numbers */
 	if (fabs(val - floor(val)) < 0.0000000000000001 &&
-			fabs(val) < 10000000000000000.0)
-	{
+		fabs(val) < 10000000000000000.0)
 		printf("  value: %.1f\n", val);
-	}
-	/* Handle very large/small numbers */
 	else if (fabs(val) >= 10000000000000000.0 || fabs(val) <= 0.0000000000000001)
 	{
 		snprintf(buffer, sizeof(buffer), "%.17g", val);
+		if (strstr(buffer, "e+") || strstr(buffer, "e-"))
+		{
+			char *e = strchr(buffer, 'e');
+
+			if (e)
+			{
+
+				snprintf(buffer, sizeof(buffer), "%.15e", val);
+			}
+		}
 		printf("  value: %s\n", buffer);
 	}
-	/* Normal case */
 	else
 	{
-		printf("  value: %.16g\n", val);
+		snprintf(buffer, sizeof(buffer), "%.16g", val);
+		if (!strchr(buffer, '.'))
+		{
+			strcat(buffer, ".0");
+		}
+		printf("  value: %s\n", buffer);
 	}
 }
