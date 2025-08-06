@@ -9,4 +9,5 @@ Table of contents:
 7. 6. Raise a message
 8. 7. Safe integer print with error message
 9. 8. Safe function
-10. 
+10. 9. ByteCode -> Python #4
+
