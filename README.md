@@ -6,4 +6,4 @@
 3. 0x02. python - import, modules
 4. 0x03. Python - data_structures: lists, tuples
 5. 0x04. Python - more data structures: sets, dictionaries
-
+6. 0x05. Python - Exceptions
