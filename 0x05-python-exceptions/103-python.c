@@ -1,16 +1,15 @@
 #include <Python.h>
 #include <stdio.h>
-#include <floatobject.h>
 #include <float.h>
-
+#include <math.h>
 
 void print_python_bytes(PyObject *p);
 void print_python_list(PyObject *p);
 void print_python_float(PyObject *p);
 
 /**
- * print_python_bytes - Prints basic info about Python bytes objects
- * @p: Python object (expected to be bytes)
+ * print_python_bytes - Prints bytes object info
+ * @p: Python bytes object
  */
 void print_python_bytes(PyObject *p)
 {
@@ -38,8 +37,8 @@ void print_python_bytes(PyObject *p)
 }
 
 /**
- * print_python_list - Prints basic info about Python lists
- * @p: Python object (expected to be list)
+ * print_python_list - Prints list object info
+ * @p: Python list object
  */
 void print_python_list(PyObject *p)
 {
@@ -69,11 +68,13 @@ void print_python_list(PyObject *p)
 }
 
 /**
- * print_python_float - Prints basic info about Python float objects
- * @p: Python object (expected to be float)
+ * print_python_float - Prints float object info
+ * @p: Python float object
  */
 void print_python_float(PyObject *p)
 {
+	double val;
+
 	printf("[.] float object info\n");
 	if (!PyFloat_Check(p))
 	{
@@ -81,5 +82,18 @@ void print_python_float(PyObject *p)
 		return;
 	}
 
-	printf("  value: %.*g\n", DBL_DIG, ((PyFloatObject *)p)->ob_fval);
+	val = ((PyFloatObject *)p)->ob_fval;
+
+	if (fabs(val - floor(val)) < DBL_EPSILON && fabs(val) < 1e16)
+	{
+		printf("  value: %.1f\n", val);
+	}
+	else if (fabs(val) >= 1e16 || fabs(val) <= 1e - 16)
+	{
+		printf("  value: %.17g\n", val);
+	}
+	else
+	{
+		printf("  value: %.16g\n", val);
+	}
 }
