@@ -68,12 +68,13 @@ void print_python_list(PyObject *p)
 }
 
 /**
- * print_python_float - Prints float object info
+* print_python_float - Prints float object info
  * @p: Python float object
  */
 void print_python_float(PyObject *p)
 {
 	double val;
+	char buffer[100];
 
 	printf("[.] float object info\n");
 	if (!PyFloat_Check(p))
@@ -84,14 +85,19 @@ void print_python_float(PyObject *p)
 
 	val = ((PyFloatObject *)p)->ob_fval;
 
-	if (fabs(val - floor(val)) < DBL_EPSILON && fabs(val) < 1e16)
+	/* Handle whole numbers */
+	if (fabs(val - floor(val)) < 0.0000000000000001 &&
+			fabs(val) < 10000000000000000.0)
 	{
 		printf("  value: %.1f\n", val);
 	}
-	else if (fabs(val) >= 1e16 || fabs(val) <= 1e-16)
+	/* Handle very large/small numbers */
+	else if (fabs(val) >= 10000000000000000.0 || fabs(val) <= 0.0000000000000001)
 	{
-		printf("  value: %.17g\n", val);
+		snprintf(buffer, sizeof(buffer), "%.17g", val);
+		printf("  value: %s\n", buffer);
 	}
+	/* Normal case */
 	else
 	{
 		printf("  value: %.16g\n", val);
