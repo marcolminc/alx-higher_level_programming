@@ -88,7 +88,7 @@ void print_python_float(PyObject *p)
 	{
 		printf("  value: %.1f\n", val);
 	}
-	else if (fabs(val) >= 1e16 || fabs(val) <= 1e - 16)
+	else if (fabs(val) >= 1e16 || fabs(val) <= 1e-16)
 	{
 		printf("  value: %.17g\n", val);
 	}
