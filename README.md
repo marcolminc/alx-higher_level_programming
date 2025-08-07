@@ -7,3 +7,5 @@
 4. 0x03. Python - data_structures: lists, tuples
 5. 0x04. Python - more data structures: sets, dictionaries
 6. 0x05. Python - Exceptions
+7. 0x06. Python - Classes and Objects
+
