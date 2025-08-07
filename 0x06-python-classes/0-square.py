@@ -1,9 +1,11 @@
 #!/usr/bin/python3
+
 """A module that defines a Square class.
 
 This module contains the implementation of a basic geometric square,
 representing the first steps in Python object-oriented programming.
 """
+
 
 class Square:
     """A class that represents a geometric square.
@@ -17,4 +19,3 @@ class Square:
             size (int): Length of the square's sides.
             position (tuple): Coordinates of the square's position.
     """
-    pass
