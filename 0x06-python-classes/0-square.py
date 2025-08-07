@@ -13,4 +13,3 @@ class Square:
     Attributes:
         None currently.
     """
-    pass
