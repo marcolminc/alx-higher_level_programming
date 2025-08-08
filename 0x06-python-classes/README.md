@@ -6,4 +6,5 @@ Table of contents:
 4. 3. Area of a square
 5. 4. Access and update private attribute
 6. 5. Printing a square
+7. 6. Coordinates of a square
 
