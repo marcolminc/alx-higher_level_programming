@@ -5,4 +5,5 @@ Table of contents:
 3. 2. Size validation
 4. 3. Area of a square
 5. 4. Access and update private attribute
+6. 5. Printing a square
 
