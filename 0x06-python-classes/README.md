@@ -7,4 +7,5 @@ Table of contents:
 5. 4. Access and update private attribute
 6. 5. Printing a square
 7. 6. Coordinates of a square
+8. 7. Singly linked list
 
