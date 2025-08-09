@@ -97,7 +97,7 @@ class SinglyLinkedList:
                 if not nxt:
                     curr.next_node = new
                     return
-                if curr.data < value <= nxt.data:
+                if curr.data <= value <= nxt.data:
                     curr.next_node = new
                     new.next_node = nxt
                     return
