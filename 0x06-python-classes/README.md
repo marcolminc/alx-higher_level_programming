@@ -9,4 +9,5 @@ Table of contents:
 7. 6. Coordinates of a square
 8. 7. Singly linked list
 9. 8. Print Square instance
-
+10. 9. Compare 2 squares
+11. 10. 
