@@ -115,6 +115,4 @@ class Square:
                     square_str += "#"
                     if symbol >= self.size - 1 > j:
                         square_str += '\n'
-        else:
-            square_str += '\n'
         return square_str
