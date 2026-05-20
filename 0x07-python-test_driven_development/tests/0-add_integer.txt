@@ -7,7 +7,7 @@ Phase 1: Basic functionality with integers
 ===========================================================
 Test 1.1: Add two positive integers
 -----------------------------------
->>> from add_integer import add_integer
+>>> add_integer = __import__('0-add_integer').add_integer
 >>> add_integer(2, 3)
 5
 
@@ -24,7 +24,7 @@ Test 1.3: Add negative integers
 Test 1.4: Add with default b value (b=98)
 -----------------------------------------
 # doctest: +NORMALIZE_WHITESPACE
->>>add_integer(2)
+>>> add_integer(2)
 100
 
 
@@ -52,3 +52,175 @@ Test 1.5: Add zero
 ===========================================================
 PHASE 2: Float handling - must cast to integers
 ===========================================================
+Test 2.1: Both floats
+---------------------
+>>> add_integer(2.5, 3.7)
+5
+
+Test 2.2: First float, second integer
+-------------------------------------
+>>> add_integer(2.9, 5)
+7
+
+Test 2.3: First integer, second float
+-------------------------------------
+>>> add_integer(5, 2.9)
+7
+
+Test 2.4: Float with default b
+------------------------------
+>>> add_integer(2.1)
+100
+
+Test 2.5: Negative floats
+-------------------------
+>>> add_integer(-2.9, -3.7)
+-5
+
+
+>>> add_integer(-2.2)
+96
+
+===========================================================
+PHASE 3: Error handling - Type checking
+===========================================================
+Test 3.1: String as first argument
+----------------------------------
+>>> add_integer('2', 3)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+Test 3.2: String as second argument
+-----------------------------------
+>>> add_integer(2, "3")
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
+
+Test 3.3: Both strings
+-----------------------
+>>> add_integer("2", "3")
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+Test 3.4: List as argument
+---------------------------
+>>> add_integer([1, 2], 3)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+
+>>> add_integer(4, [3, 2])
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
+
+Test 3.5: None as argument
+---------------------------
+>>> add_integer(None, 5)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+
+>>> add_integer(7.2, None)
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
+
+Test 3.6: Boolean (note: bool is subclass of int in Python)
+-------------------------------------------------------------
+>>> add_integer(True, 5)  # True == 1
+6
+
+>>> add_integer(False, 5)  # False == 0
+5
+
+Test 3.7: Dictionary as argument
+---------------------------------
+>>> add_integer({"a": 1}, 2)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+
+>>> add_integer(-6, {"a": 1})
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
+
+===========================================================
+PHASE 4: Edge cases
+===========================================================
+Test 4.1: Very large integers
+------------------------------
+>>> add_integer(999999999999, 1)
+1000000000000
+
+Test 4.2: Maximum and minimum integers
+----------------------------------------
+>>> add_integer(9223372036854775807, 1)
+9223372036854775808
+
+Test 4.3: Float that is effectively integer
+--------------------------------------------
+>>> add_integer(5.0, 3.0)
+8
+
+Test 4.4: Very large float (truncation)
+-----------------------------------------
+>>> add_integer(1e20, 1e20)
+200000000000000000000
+
+===========================================================
+PHASE 5: Boundary and special cases
+===========================================================
+Test 5.1: One argument only (default b)
+-----------------------------------------
+>>> add_integer(42)
+140
+
+Test 5.2: No arguments (should fail)
+--------------------------------------
+>>> add_integer()
+Traceback (most recent call last):
+...
+TypeError: add_integer() missing 1 required positional argument: 'a'
+
+Test 5.3: Three arguments (should fail)
+-----------------------------------------
+>>> add_integer(1, 2, 3)
+Traceback (most recent call last):
+...
+TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
+
+Test 5.4: Float NaN (Not a Number)
+------------------------------------
+>>> import math
+>>> add_integer(float('nan'), 5)
+Traceback (most recent call last):
+...
+ValueError: cannot convert float NaN to integer
+
+
+>>> import math
+>>> add_integer(5, float('nan'))
+Traceback (most recent call last):
+...
+ValueError: cannot convert float NaN to integer
+
+Test 5.5: Float infinity
+-------------------------
+>>> add_integer(float('inf'), 5)
+Traceback (most recent call last):
+...
+OverflowError: cannot convert float infinity to integer
+
+
+>>> add_integer(5, float('inf'))
+Traceback (most recent call last):
+...
+OverflowError: cannot convert float infinity to integer
