@@ -203,3 +203,7 @@ a is b
 139926795932424
 >>> a += [4]
 >>> id(a)
+
+#### 29. #pythonic
+Write a function magic_string() that returns a string “BestSchool” n times the number of the iteration (see code):
+- Your file should be maximum 4-line long (no documentation needed)
