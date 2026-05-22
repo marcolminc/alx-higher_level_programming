@@ -108,4 +108,4 @@ class Rectangle:
             row = '#' * self.width
             res.append(row)
 
-        return '\n'.join(res)
+        return '\n'.join(res) if len(res) else ''
