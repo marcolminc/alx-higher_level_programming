@@ -104,8 +104,9 @@ class Rectangle:
 
         """
         res = []
-        for _ in range(self.height):
-            row = '#' * self.width
-            res.append(row)
+        if (self.width and self.height):
+            for _ in range(self.height):
+                row = '#' * self.width
+                res.append(row)
 
         return '\n'.join(res) if len(res) else ''
