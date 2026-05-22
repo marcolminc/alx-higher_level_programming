@@ -186,4 +186,14 @@ a = ()
 b = ()
 a is b
 ```
+#### 27. Still the same?
+mandatory
+Score: 0.0% (Checks completed: 0.0%)
+>>> id(a)
+139926795932424
+>>> a
+[1, 2, 3, 4]
+>>> a = a + [5]
+>>> id(a)
+
 
