@@ -112,7 +112,7 @@ class Rectangle:
         return '\n'.join(res) if len(res) else ''
 
     def __repr__(self):
-        """Represent the rectangle as a parsable string for the Python interpreter.
+        """Represent the rectangle as a parsable string.
 
         Returns:
             str: The parsable string representation of the rectangle.
