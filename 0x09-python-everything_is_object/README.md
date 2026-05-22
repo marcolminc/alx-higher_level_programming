@@ -138,4 +138,10 @@ Write a function `def copy_list(l):` that returns a *copy* of a list.
 - the input can contin any type of objects
 - file should be maximum 3-lines long (no documentation needed)
 
+#### 20. Tuple or not?
+```Python
+a = ()
+```
+Is `a` a tuple? Anser with `Yes` or `No`.
+
 
