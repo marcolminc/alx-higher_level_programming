@@ -179,4 +179,11 @@ b = (1, 2)
 a is b
 ```
 
+#### 26. Empty is not empty
+What does this script print?
+```Python
+a = ()
+b = ()
+a is b
+```
 
