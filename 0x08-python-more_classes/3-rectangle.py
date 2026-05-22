@@ -106,7 +106,6 @@ class Rectangle:
         res = []
         for _ in range(self.height):
             row = '#' * self.width
-            row += '\n'
             res.append(row)
 
-        return ''.join(res)
+        return '\n'.join(res)
