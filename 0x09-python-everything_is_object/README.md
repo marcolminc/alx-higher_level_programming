@@ -187,8 +187,7 @@ b = ()
 a is b
 ```
 #### 27. Still the same?
-mandatory
-Score: 0.0% (Checks completed: 0.0%)
+
 >>> id(a)
 139926795932424
 >>> a
@@ -196,4 +195,11 @@ Score: 0.0% (Checks completed: 0.0%)
 >>> a = a + [5]
 >>> id(a)
 
+28. Same or not?
 
+>>> a
+[1, 2, 3]
+>>> id (a)
+139926795932424
+>>> a += [4]
+>>> id(a)
