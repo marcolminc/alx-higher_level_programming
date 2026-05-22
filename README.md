@@ -10,4 +10,5 @@
 7. 0x06. Python - Classes and Objects
 8. 0x07. Python - Test Driven Development
 9. 0x08. Python - More Classes and Objects
+10. 0x09. Python - Everything is an Object
 
