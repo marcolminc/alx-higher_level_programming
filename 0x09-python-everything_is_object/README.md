@@ -144,4 +144,11 @@ a = ()
 ```
 Is `a` a tuple? Anser with `Yes` or `No`.
 
+#### 21. Tuple or not?
+
+```Python
+a = (1, 2)
+```
+Is `a` a tuple? Answer with `Yes` or `No`.
+
 
